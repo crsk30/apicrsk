@@ -27,10 +27,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // parses form-urlencoded
 
 app.get('/', async (req, res) => {
-    console.log("Ticker received:", );
+    // console.log("Ticker received:", );
     try {
-        console.log("Fetched stock data:");
-        res.json({message: "Server is up and running"});
+        // console.log("Fetched stock data:");
+        res.json({message: "Server is up and running with codepipeline"});
     } catch (error) {
         console.log("Error fetching stock data:", error);
         res.status(500).json({ error: 'Failed to fetch stock data.' });
